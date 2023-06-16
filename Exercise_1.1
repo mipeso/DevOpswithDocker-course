@@ -1,4 +1,19 @@
-CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                      PORTS     NAMES
-56cdcb24a203   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 12 seconds ago             determined_moser
-3e9a181dc65f   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 6 seconds ago              sweet_turing
-be42ca5a14e2   nginx     "/docker-entrypoint.…"   About a minute ago   Up About a minute           80/tcp    practical_kapitsa
+(base) ➜  ~ docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) ➜  ~ docker run -d nginx
+90c973fed63b054b6dc78fd017f8c79b038698b265e3ee4353fb70d106ae8a51
+(base) ➜  ~ docker run -d nginx
+626b9094e8e539119b0c83f1fb9313f66961ffc5f0846fbc1e64bad184928272
+(base) ➜  ~ docker run -d nginx
+a747fb42a1c1ee45588a083942d96490e62abec14cab3e030682c6810e2a89c7
+(base) ➜  ~ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+a747fb42a1c1   nginx     "/docker-entrypoint.…"   12 seconds ago   Up 12 seconds   80/tcp    crazy_austin
+626b9094e8e5   nginx     "/docker-entrypoint.…"   18 seconds ago   Up 16 seconds   80/tcp    crazy_jemison
+90c973fed63b   nginx     "/docker-entrypoint.…"   26 seconds ago   Up 24 seconds   80/tcp    musing_elgamal
+(base) ➜  ~ docker stop 62 90
+62
+90
+(base) ➜  ~ docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+a747fb42a1c1   nginx     "/docker-entrypoint.…"   43 seconds ago   Up 43 seconds   80/tcp    crazy_austin
