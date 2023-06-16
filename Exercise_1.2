@@ -1,5 +1,15 @@
-docker ps -as
-CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
-
-docker images
+(base) ➜  ~ docker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES            SIZE
+a747fb42a1c1   nginx     "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes               80/tcp    crazy_austin     1.09kB (virtual 187MB)
+626b9094e8e5   nginx     "/docker-entrypoint.…"   4 minutes ago   Exited (0) 3 minutes ago             crazy_jemison    1.09kB (virtual 187MB)
+90c973fed63b   nginx     "/docker-entrypoint.…"   4 minutes ago   Exited (0) 3 minutes ago             musing_elgamal   1.09kB (virtual 187MB)
+(base) ➜  ~ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    eb4a57159180   44 hours ago   187MB
+(base) ➜  ~ docker stop a747
+(base) ➜  ~ docker container prune
+(base) ➜  ~ docker rmi -f $(docker images -aq)
+(base) ➜  ~ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+(base) ➜  ~ docker images
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
