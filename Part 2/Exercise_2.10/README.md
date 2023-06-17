@@ -1,0 +1,1 @@
+Removed ports from backend and frontend in docker-compose.yml to prevent direct access.
