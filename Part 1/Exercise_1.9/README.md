@@ -1,0 +1,1 @@
+(base) ➜  DevOpswithDocker-course git:(master) ✗ docker run -v /Users/mipeso/Documents/Aalto/Maisteri/DevOpswithDocker-course/Exercise_1.9/text.log:/usr/src/app/text.log devopsdockeruh/simple-web-service
